@@ -6,9 +6,27 @@ html,body{
 .main{
     width: 100%;
 }
+
+.head1{
+    font-size: 25px;
+}
+
+.head2{
+    font-size: 15px;
+}
+
+.head3{
+    font-size: 15px;
+}
+
+.form input, .form .submit{
+    width: 10rem;
+    height: 3rem;
+}
+
 #head{
-    background-size: 130%;
-    width: 56rem;
+    background-size: cover;
+    width: fit-content;
 }
 #head #navbar{
     display: flex;
@@ -35,7 +53,14 @@ html,body{
 } */
 .row{
     flex-direction: column;
-    width: 56rem;
+    width: fit-content;
+}
+
+.row .image img {
+    display: block;
+    height: 18rem;
+    width: 22rem;
+    margin: auto;
 }
 
 .text .image{
@@ -46,28 +71,43 @@ html,body{
     text-align: center;
 }
 
+.tvprimary{
+    font-size:2rem ;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tvsecondary{
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
 #row1, #row4{
     flex-direction: column-reverse;
 }
 #upper{ 
+    width: auto;
     position: absolute;
     top: 16rem;
-    left: 28rem;
+    left: 50%;
     font-size: 2rem;
     transform: translate(-50%,-50%);
     text-align: center;
     margin-top: 5rem;
 }
 .blackline {
-    width: 56rem;
+    width:100%;
 }
 
 .questions{
     color: white;
     text-align: center;
     width: max-content;
-    width: 40rem;
-    margin: 40px auto 40px 7rem;
+    width: 24rem;
+    margin: 40px auto 40px 1rem;
 }
 
 footer{
@@ -75,6 +115,7 @@ footer{
     padding-left: 2rem;
 }
 
+
 footer .row{
-    flex-direction: row;
+    flex-direction: column;
 }
